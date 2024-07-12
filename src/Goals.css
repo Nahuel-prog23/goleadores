@@ -18,12 +18,12 @@
 }
 /* Estilos para filas pares */
 .MuiTableRow-root:nth-child(even) {
-    background-color: lightblue;
+    background-color: lightyellow;
 }
 
 /* Estilos para filas impares */
 .MuiTableRow-root:nth-child(odd) {
-    background-color: lightyellow;
+    background-color: lightblue;
 }
 /* Efecto hover */
 .MuiTableRow-root:hover {
