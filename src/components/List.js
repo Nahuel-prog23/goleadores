@@ -14,12 +14,12 @@ export default function List({list}){
     );*/
     return (
       <TableContainer component={Paper}>
-        <Table>
+        <Table className="Tabla">
           {/* Cabecera de la tabla */}
           <TableHead>
             <TableRow>              
               <TableCell>Nombre</TableCell>
-              <TableCell>Goles</TableCell>              
+              <TableCell className="Column">Goles</TableCell>              
             </TableRow>
           </TableHead>
           {/* Cuerpo de la tabla */}
@@ -27,7 +27,7 @@ export default function List({list}){
             {list.map((list) => (
               <TableRow key={list.id}>
                 <TableCell>{list.name}</TableCell>
-                <TableCell>{list.goles}</TableCell>                
+                <TableCell className="Column">{list.goles}</TableCell>                
               </TableRow>
             ))}
           </TableBody>
