@@ -6,14 +6,20 @@ import './Goals.css';
 function App() {
   
   
-  const jugadores = [{name:"Edison Cavani",goles:13},
-    { id: 1,name:"Miguel Merentiel",goles:11},
-    { id: 2,name:"Kevin Zenon",goles:4},
-    { id: 3,name:"Cristian Medina",goles:2}];
+  const jugadores = [{id: 0, Nombre:"Edison Cavani",Goles:13,Edad:37},
+    { id: 1,Nombre:"Miguel Merentiel",Goles:11,Edad:28},
+    { id: 2,Nombre:"Kevin Zenon",Goles:4,Edad:22},
+    { id: 3,Nombre:"Cristian Medina",Goles:2,Edad:22}];
+  
+  const cabecera = [
+    "Nombre",
+    "Goles",
+    "Edad"
+  ];
 
   return (
     <div className="Caja">    
-      <List list={jugadores}/>      
+      <List list={jugadores} cabecera={cabecera}/>      
     </div>
   );
 
