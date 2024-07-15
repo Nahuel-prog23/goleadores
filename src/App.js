@@ -17,10 +17,30 @@ function App() {
     "Edad"
   ];
 
+  const puntaje = [{id: 0, Club:"Talleres",PJ:5,DG:7,Pts:13},
+    { id: 1,Club:"Huracán",PJ:5,DG:6,Pts:13},
+    { id: 2,Club:"Unión",PJ:5,DG:5,Pts:13},
+    { id: 3,Club:"Racing",PJ:5,DG:6,Pts:10}];
+
+  const cabecera2 = [
+     "Club",
+     "PJ",
+     "DG",
+     "Pts"
+   ];
+
+
   return (
+    <>
+    <h2>Goleadores Boca</h2>
     <div className="Caja">    
-      <List list={jugadores} cabecera={cabecera}/>      
+      <List list={jugadores} cabecera={cabecera}/>
     </div>
+    <h2>Punteros</h2>
+    <div className="Caja">  
+      <List list={puntaje} cabecera={cabecera2}/>      
+    </div>
+    </>
   );
 
 
